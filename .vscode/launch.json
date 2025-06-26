@@ -1,0 +1,44 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "open-sight",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceRoot}/target/debug/open-sight",
+      "args": ["./ttt"],
+      "cwd": "${workspaceRoot}",
+      "env": {
+        "CRYSTAL_EYE_PATH": "/mnt/data/awilter/mgq-private-eye/crystaleye/bin/crystal-eye2"
+      }
+    },
+    {
+      "name": "copy_dcms",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceRoot}/target/debug/copy_dcms",
+      "args": ["-r", "ooo.csv", "-t", "ttt"],
+      "cwd": "${workspaceRoot}"
+    },
+    {
+      "name": "proc_dcms",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/proc_dcms.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      // "args": ["/mnt/data/awilter/dj_110/1106755/20180627_L"]
+      // "args": ["/mnt/data/awilter/dj_110", "-vw"]
+      "args": [
+        // "${workspaceFolder}/tests/20180627_R/",
+        "/mnt/data/awilter/dj_110/499543/20180322_L/",
+        "-v",
+        "-o",
+        "/mnt/data/awilter/OpenSight/eeee"
+      ]
+    }
+  ]
+}
