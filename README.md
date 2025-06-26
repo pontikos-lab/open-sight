@@ -132,6 +132,8 @@ git push origin --tags
 
 ## Changelog
 
+- 0.3.4
+  - Sanitised version, removed all the unnecessary files and infos, safe-guarding privacy
 - 0.3.3
   - Renamed to `copy_src` and `copy_src_csv`
 - 0.3.2
